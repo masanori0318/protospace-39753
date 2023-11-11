@@ -29,11 +29,10 @@ class PrototypesController < ApplicationController
 
   def edit
     
-
   end
 
   def update
-   
+    
     if @prototype.update(prototype_params)
       redirect_to prototype_path(@prototype.id)
     else
